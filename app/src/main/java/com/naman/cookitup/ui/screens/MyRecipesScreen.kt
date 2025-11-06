@@ -30,7 +30,7 @@ fun MyRecipesScreen(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "No saved recipes yet.\nSearch and save recipes to see them here!",
+                text = "No saved recipes yet.\nAdd recipes to see them here!",
                 style = MaterialTheme.typography.bodyLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -78,9 +78,9 @@ fun RecipeCard(
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Preparation Time: ${recipe.preparationTime}",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.primary
+                text = "Tap to view details",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
             )
         }
     }

@@ -8,8 +8,6 @@ data class Recipe(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val recipeName: String,
-    val ingredients: String,
-    val steps: String,
-    val preparationTime: String
+    val ingredients: String
 )
 
